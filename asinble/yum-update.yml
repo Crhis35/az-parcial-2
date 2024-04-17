@@ -1,7 +1,7 @@
 # Update all packages
 ---
 - hosts: azurevms
-  become: false
+  become: true
   gather_facts: no
   tasks:
     - name: Update all packages

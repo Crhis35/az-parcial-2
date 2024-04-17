@@ -14,6 +14,9 @@ variable "management_ip" {
 variable "vn_name" {
   description = "Name of the ip"
 }
+variable "app_service_ips" {
+  description = "App service ips"
+}
 variable "subnet_name" {
   description = "Name of the subnet"
   default     = "vmss-subnet"

@@ -7,9 +7,6 @@ variable "resource_group" {
 }
 
 
-variable "vn_id" {
-  description = "Virtual network identifier"
-}
 
 variable "apps_name" {
   description = "Name of the apps service"

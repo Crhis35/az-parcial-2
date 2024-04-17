@@ -16,3 +16,4 @@ management_ip      = "ip" your laptop ip
 ````
 
 export ANSIBLE_HOST_KEY_CHECKING=False
+`ansible-playbook -i hosts-dev all-playbooks.yml -vvv`

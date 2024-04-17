@@ -4,7 +4,7 @@ resource "azurerm_service_plan" "frontend" {
   location            = var.resource_group.location
   resource_group_name = var.resource_group.name
   os_type             = "Linux"
-  sku_name            = "F1"
+  sku_name            = "B1"
 }
 
 
@@ -17,9 +17,11 @@ resource "azurerm_linux_web_app" "frontend" {
   service_plan_id     = azurerm_service_plan.frontend.id
 
   site_config {
-    always_on = false
+    always_on        = false
+    app_command_line = "node server.js"
     application_stack {
-      php_version = "8.0"
+      node_version = "16-lts"
+
     }
   }
 }
