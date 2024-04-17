@@ -1,0 +1,7 @@
+[azurevms]
+40.71.187.80
+
+[azurevms:vars]
+ansible_user=Vm1
+ansible_password=Th1sIsAP@ssw0rd
+ansible_connection=ssh
